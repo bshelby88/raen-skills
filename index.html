@@ -1,90 +1,49 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8">
-<title>RAEN Skills — The Operating Manual for a Production x402 Fleet</title>
+<html lang="en"><head><meta charset="utf-8">
+<title>RAEN Skills — $29/skill, $149 bundle — pay with USDC, instant automatic delivery</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Battle-tested ops skills from running 12 x402-payable services on Base: self-healing Fly.io fleet sweeps, charge-and-rebate free-first-call funnels, x402 production deployment. $29 each, $149 bundle.">
+<meta name="description" content="Operational skills from a live 12-service x402 fleet on Base. Pay with USDC on Base — fully automatic on-chain verification and email delivery, no human in the loop.">
 <style>
 :root { color-scheme: dark; }
 * { margin:0; padding:0; box-sizing:border-box; }
-body { background:#0a0e14; color:#e6edf3; font-family:ui-sans-serif,system-ui,sans-serif; line-height:1.65; padding:3rem 1rem; }
-main { max-width:880px; margin:0 auto; }
-h1 { font-size:2.1rem; line-height:1.2; margin-bottom:.6rem; }
-h1 em { color:#22d3ee; font-style:normal; }
-.sub { color:#8b949e; font-size:1.05rem; margin-bottom:2rem; max-width:46rem; }
-.card { background:#161b22; border:1px solid #30363d; border-radius:12px; padding:1.5rem 1.6rem; margin:1.2rem 0; }
-.card h2 { font-size:1.15rem; color:#e6edf3; margin-bottom:.4rem; }
-.card .price { float:right; color:#7ee787; font-weight:700; font-size:1.1rem; }
-.card p { color:#b8c4cf; font-size:.95rem; }
-.card ul { margin:.6rem 0 0 1.2rem; color:#8b949e; font-size:.9rem; }
-.bundle { background:#111827; border:1px solid #22d3ee; }
-.buy ol { margin:.6rem 0 .6rem 1.3rem; color:#b8c4cf; font-size:.95rem; }
-.buy code { background:#0d1117; border:1px solid #30363d; border-radius:4px; padding:.1rem .35rem; font-size:.85rem; color:#7ee787; word-break:break-all; }
-.bundle h2 { color:#22d3ee; }
-.cta { display:inline-block; margin-top:1rem; background:#22d3ee; color:#0a0e14; font-weight:700; padding:.6rem 1.2rem; border-radius:8px; text-decoration:none; }
-.trust { margin:2.5rem 0 1rem; color:#8b949e; font-size:.92rem; }
-.trust strong { color:#e6edf3; }
+body { background:#0a0e14; color:#e6edf3; font-family:ui-sans-serif,system-ui,sans-serif; line-height:1.6; padding:2rem 1rem; }
+main { max-width:820px; margin:0 auto; }
 a { color:#22d3ee; }
-footer { margin-top:3rem; color:#8b949e; font-size:.85rem; }
-</style></head>
-<body><main>
-<h1>RAEN Skills — <em>the operating manual</em> for a production x402 fleet</h1>
-<p class="sub">These are not tutorials. Each skill is the exact procedure we run every day on <a href="https://bshelby88.github.io/raen-agent-directory/">12 x402-payable services on Base</a> — real commands, real incident post-mortems, real telemetry. Written for agent developers and autonomous-agent operators.</p>
+h1 { font-size:2rem; margin:0.5rem 0; }
+h2 { margin:2rem 0 0.75rem; color:#22d3ee; font-size:1.25rem; }
+p, li { color:#c9d1d9; }
+.price { display:inline-block; background:#161b22; border:1px solid #22d3ee; color:#22d3ee; border-radius:999px; padding:0.2rem 1rem; font-weight:600; }
+.card { background:#11161f; border:1px solid #1f2733; border-radius:10px; padding:1rem 1.25rem; margin:0.75rem 0; }
+.card b { color:#e6edf3; }
+code { background:#161b22; padding:0.1rem 0.35rem; border-radius:4px; font-size:0.9em; }
+footer { margin-top:3rem; border-top:1px solid #1f2733; padding-top:1rem; font-size:0.9rem; color:#8b949e; }
+#usdc-checkout input { font-size:1rem; }
+</style></head><body><main>
+<p><a href="README.md">&larr; Back to the full storefront</a></p>
+<h1>RAEN Skills</h1>
+<p>Operational knowledge from a <b>live</b> 12-service x402 fleet on Base — real commands, real post-mortems, honest numbers.</p>
 
-<div class="card">
-  <span class="price">$29</span>
-  <h2>The Steward Pattern — Self-Healing Fly.io Fleet Operations</h2>
-  <a class="cta" href="#buy">Get this skill →</a>
-  <p>The daily sweep that keeps a multi-service fleet green without a human on call.</p>
-  <ul><li>Liveness checks that don't false-alarm (local DNS negative-caching vs real outage)</li>
-  <li>Crash-loop diagnosis, with a real post-mortem: max-restart leases and the revive command</li>
-  <li>Vercel "Ready but 404ing" prod repair — the redeploy pattern that actually works</li>
-  <li>Manifest drift checks and the run-log format that makes fleet history searchable</li></ul>
-</div>
+<div class="card"><b>The Steward Pattern — Self-Healing Fly.io Fleet Operations</b> <span class="price">$29</span><br>
+The exact daily sweep: liveness checks, crash-loop diagnosis (with a real post-mortem), Vercel prod repair, manifest drift checks, run-log format.</div>
+<div class="card"><b>Charge-and-Rebate — Net-$0 First-Call Funnels for x402 APIs</b> <span class="price">$29</span><br>
+Build "first call genuinely free": charge rail + on-chain rebate rail, anti-abuse by wallet, trust artifacts, copy that converts.</div>
+<div class="card"><b>x402 Production Deployment — Manifest, Facilitator, Telemetry, Drift Guard</b> <span class="price">$29</span><br>
+Manifest invariants, the three-surface verification, settle-path telemetry, daily drift guard, discoverability (llms.txt, agents.json).</div>
+<div class="card"><b>The Bundle — all three</b> <span class="price">$149</span><br>
+The complete operating manual for a production x402 fleet: deploy it, heal it, grow it.</div>
 
-<div class="card">
-  <span class="price">$29</span>
-  <h2>Charge-and-Rebate — Net-$0 First-Call Funnels for x402 APIs</h2>
-  <a class="cta" href="#buy">Get this skill →</a>
-  <p>How to offer a genuinely free first call without breaking x402 economics.</p>
-  <ul><li>Why zero-value challenges can't settle (facilitator mechanics) and what to do instead</li>
-  <li>Charge rail + on-chain rebate rail, verified settlement-to-rebate bookkeeping</li>
-  <li>Anti-abuse by wallet, kill switch, daily caps</li>
-  <li>Trust artifacts and copy that converts skeptics</li></ul>
-</div>
+<h2>Why buy from us</h2>
+<ul>
+<li><b>It's what we run.</b> Not theory: real run logs, real incidents, real telemetry patterns.</li>
+<li><b>TRUTH law.</b> We publish our zeros — see the public <a href="https://settlement-collector.fly.dev/proof">proof of commerce</a> and <a href="https://settlement-collector.fly.dev/ledger.json">ledger</a>.</li>
+<li><b>Machine-readable web.</b> Our fleet serves llms.txt, agents.json, and a public stats page.</li>
+</ul>
 
-<div class="card">
-  <span class="price">$29</span>
-  <h2>x402 Production Deployment — Manifest, Facilitator, Telemetry, Drift Guard</h2>
-  <a class="cta" href="#buy">Get this skill →</a>
-  <p>From manifest to first settlement with the invariants that keep money flowing to the right address.</p>
-  <ul><li>Manifest invariants (scheme, network, payTo) and how a live 402 decode catches a lying manifest</li>
-  <li>The three-surface verification: manifest, live challenge, on-chain receipt</li>
-  <li>Settle-path telemetry and the daily drift guard</li>
-  <li>Discoverability: llms.txt, agents.json, directory listings</li></ul>
-</div>
-
-<div class="card bundle">
-  <span class="price">$149</span>
-  <h2>The Bundle — all three skills</h2>
-  <p>The complete operating manual: deploy it, heal it, grow it. One purchase, team license.</p>
-  <a class="cta" href="https://github.com/bshelby88/raen-skills#the-bundle">Buy the bundle →</a>
-</div>
-
-<div class="card buy" id="buy">
-  <h2>Buy — how it works</h2>
-  <p>Direct purchase, no checkout wall. Pay in USDC on Base mainnet from any wallet or agent client:</p>
-  <ol>
-    <li>Send the exact amount in USDC (Base) to <code>0x9b8a27e03ceba490953cda8ab1291c0e13baf72f</code> — $29 per skill, $149 for the bundle.</li>
-    <li>Email the transaction hash and the skill (or bundle) name to <a href="mailto:ops@royalruby.io">ops@royalruby.io</a>.</li>
-    <li>You get the skill files delivered within 24 hours — private repo access or zip, your choice. Bundle = team license.</li>
-  </ol>
-  <p style="color:#8b949e;font-size:.85rem">Every settlement is on-chain and verifiable. Questions first? Same address — we answer.</p>
-</div>
-
-<div class="trust">
-  <strong>Why believe us?</strong> We publish our zeros. <a href="https://bshelby88.github.io/raen-agent-directory/stats/">Live fleet telemetry</a>, <a href="https://settlement-collector.fly.dev/proof">proof of commerce</a>, and every skill page in this repo is the verbatim procedure from our run logs — incidents included, unedited. TRUTH law: real numbers only.
-</div>
-
-<footer>RAEN · Royal Agentic Enterprises · <a href="https://github.com/bshelby88/raen-skills">source repo</a> · <a href="https://bshelby88.github.io/raen-agent-directory/">fleet directory</a> · ops@royalruby.io</footer>
+<div class="usdc-checkout" data-product="skill-steward-pattern" data-price="29"></div>
+<div class="usdc-checkout" data-product="skill-charge-and-rebate" data-price="29"></div>
+<div class="usdc-checkout" data-product="skill-x402-production" data-price="29"></div>
+<div class="usdc-checkout" data-product="skill-bundle" data-price="149"></div>
+<script src="./qrcode.js"></script>
+<script src="./usdc-checkout.js"></script>
+<footer>Royal Agentic Enterprises — autonomous agent fleet. USDC on Base. Contact: ops@royalruby.io.</footer>
 </main></body></html>
