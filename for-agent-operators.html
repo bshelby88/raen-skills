@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>The Steward Pattern — self-healing fleet ops for autonomous agent developers — $29</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="For people running unattended AI agent fleets (Claude Code, Cron-driven agents, MCP servers): the exact daily verification sweep a live 12-service x402 fleet uses to stay green. One-time $29, USDC on Base, automatic delivery.">
+<style>
+:root { color-scheme: dark; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0a0e14; color:#e6edf3; font-family:ui-sans-serif,system-ui,sans-serif; line-height:1.6; padding:2rem 1rem; }
+main { max-width:760px; margin:0 auto; }
+a { color:#22d3ee; }
+h1 { font-size:1.9rem; margin:0.5rem 0; }
+h2 { margin:2rem 0 0.75rem; color:#22d3ee; font-size:1.25rem; }
+p, li { color:#c9d1d9; }
+.price { display:inline-block; background:#161b22; border:1px solid #22d3ee; color:#22d3ee; border-radius:999px; padding:0.2rem 1rem; font-weight:600; }
+code { background:#161b22; padding:0.1rem 0.35rem; border-radius:4px; font-size:0.9em; }
+.card { background:#11161f; border:1px solid #1f2733; border-radius:10px; padding:1rem 1.25rem; margin:0.75rem 0; }
+footer { margin-top:3rem; border-top:1px solid #1f2733; padding-top:1rem; font-size:0.9rem; color:#8b949e; }
+</style></head><body><main>
+<p><a href="./">&larr; Back to the full storefront</a></p>
+<h1>You deployed your agents. Who verifies them at 3am?</h1>
+<p class="sub">A page for people running <b>unattended agent fleets</b> — cron-driven Hermes/Claude Code loops, MCP servers, x402 APIs. If nobody is watching, things drift: machines crash-loop, DNS caches lie, a config fix "succeeds" without changing live behavior, and you find out from a user instead of a check.</p>
+
+<h2>The fix is a sweep, not a dashboard</h2>
+<p>The <b>Steward Pattern</b> ($29, one-time) is the operating procedure a live 12-service x402 payments fleet on Base has run on a 4-hour cron since November 2026. Every pass, in order:</p>
+<div class="card">
+<ol>
+<li><b>Liveness</b> — <code>/health</code> on every service, with the local-DNS false-negative check before you ever "restart" anything.</li>
+<li><b>Drift</b> — payment-manifest invariants verified against a <i>live</i> 402 challenge decode, not just the file (manifests lie; a stale <code>payTo</code> silently misroutes money).</li>
+<li><b>On-chain truth</b> — balances and ledger scans over plain public RPCs, no explorer API key, with phantom-revenue detection (telemetry says $6; chain says $0.10 — here's why that happens).</li>
+<li><b>Verify the fix, not the intent</b> — <code>secrets set</code> doesn't refresh a running machine; a "Ready" Vercel deploy can 404 on every path; scale-downs can stop a Postgres primary. Each has a tested recovery.</li>
+<li><b>Proof of liveness</b> — one run artifact per pass, so silence is evidence, not anxiety.</li>
+</ol>
+</div>
+
+<h2>What's inside</h2>
+<ul>
+<li>The full sweep checklist as a copy-pasteable run template (used verbatim, every 4 hours, since Nov 2026)</li>
+<li>A real crash-loop post-mortem and the <code>flyctl deploy</code>-down sftp fallback that ships fixes when the registry is dead</li>
+<li>Credential forensics pattern: prove a service's <i>live</i> secrets work without ever displaying a secret value</li>
+<li>Free-tier trap: why $0 challenges can't settle, and the charge-and-rebate design that replaces them</li>
+</ul>
+
+<div class="card"><b>The Steward Pattern — Self-Healing Fly.io Fleet Operations</b> <span class="price">$29</span><br>
+Pay with USDC on Base — automatic on-chain verification and email delivery, no human in the loop. Also available in the <a href="./">$149 all-three bundle</a>.</div>
+
+<h2>Why trust it</h2>
+<ul>
+<li><b>It's what we run.</b> This is not a rewrite of blog posts; it is the runbook behind <a href="https://settlement-collector.fly.dev/proof">our live proof-of-commerce page</a>.</li>
+<li><b>TRUTH law.</b> We publish our zeros: <a href="https://settlement-collector.fly.dev/ledger">public sales ledger</a>, straight from the settlement collector, including the days revenue was $0.00.</li>
+<li><b>Machine-readable.</b> Our fleet serves <a href="https://bshelby88.github.io/raen-agent-directory/llms.txt">llms.txt</a> — point your agent at it and let it judge.</li>
+</ul>
+
+<h2>Free first call on our API fleet</h2>
+<p>Want to see the pattern's output before buying? The 12-service fleet it keeps green is itself a product: <a href="https://raen.royalruby.io">raen.royalruby.io</a> lists every endpoint, and the <a href="https://raen-mcp-gateway.fly.dev/.well-known/agent.json">MCP gateway agent card</a> describes five paid tools with a net-$0 first call (charge-and-rebate).</p>
+
+<footer>RAEN — Royal Agentic Enterprises · <a href="https://settlement-collector.fly.dev/proof">proof</a> · <a href="https://settlement-collector.fly.dev/ledger">ledger</a> · <a href="https://bshelby88.github.io/raen-agent-directory/llms.txt">llms.txt</a></footer>
+</main></body></html>
