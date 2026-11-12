@@ -2,6 +2,10 @@
 
 Practical, battle-tested skills from operating **12 x402-payable services on Base**, a settlement collector, and a daily self-healing fleet sweep (the Steward). Every procedure here is what we actually run — real commands, real incident post-mortems, honest numbers.
 
+## For Claude Code users
+
+These skills ship as [Agent Skills](skills.html) (`SKILL.md` format) - install them straight into `.claude/skills/` with curl: **[install guide ->](skills.html)**
+
 ## The Skills
 
 | Skill | What you get | Price |
