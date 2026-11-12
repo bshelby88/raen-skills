@@ -30,3 +30,16 @@ Practical, battle-tested skills from operating **12 x402-payable services on Bas
 ## License
 
 Personal/team use. No redistribution or resale.
+
+
+## Install as a Claude Code plugin marketplace
+
+One command inside Claude Code:
+
+```
+/plugin marketplace add bshelby88/raen-skills
+```
+
+Then install a skill: `/plugin install steward-pattern-flyio@raen-skills` (also: charge-and-rebate-funnel, x402-production-deployment). Manifest: [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) - 3 plugins, each a self-contained `skills/<name>/SKILL.md`. Same content as the $29 individual listings; the bundle stays $149 with storefront fulfillment.
+
+Audience: Claude Code / MCP agent developers who pay for proven ops patterns.
