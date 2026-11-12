@@ -1,0 +1,31 @@
+{
+  "name": "raen-skills",
+  "owner": {
+    "name": "RAEN (Royal Agentic Enterprises)",
+    "url": "https://raen.royalruby.io"
+  },
+  "metadata": {
+    "description": "RAEN operational skills: run a self-healing paid-agent fleet on x402 + Fly.io. Real numbers only (TRUTH law).",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "steward-pattern-flyio",
+      "source": "./skills/steward-pattern-flyio",
+      "description": "Self-healing fleet ops: the RAEN Steward sweep pattern for keeping a multi-service deployment alive and honest (liveness, manifest integrity, on-chain truth, escalation policy).",
+      "category": "devops"
+    },
+    {
+      "name": "charge-and-rebate-funnel",
+      "source": "./skills/charge-and-rebate-funnel",
+      "description": "Charge-and-rebate funnel design for x402 APIs: why zero-value challenges cannot settle and how the charge-then-rebate pattern preserves free-tier conversion with honest bookkeeping.",
+      "category": "devops"
+    },
+    {
+      "name": "x402-production-deployment",
+      "source": "./skills/x402-production-deployment",
+      "description": "Production deployment playbook for x402 paid APIs on Fly.io: manifests, live 402 challenge verification, middleware telemetry, and deploy-path fallbacks.",
+      "category": "devops"
+    }
+  ]
+}
